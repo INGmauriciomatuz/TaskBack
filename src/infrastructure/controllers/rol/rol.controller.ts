@@ -22,7 +22,9 @@ import { RolEntity } from 'src/infrastructure/Entity/rolEntity';
 import { RolResponseDto } from './dto/response';
 import { Create, FindOneParams, Edit } from './dto/validation';
 import { RolNotFoundError } from 'src/app/rol/RolGetOneById/RolNotFoundError';
+import { ApiTags } from '@nestjs/swagger';
 
+@ApiTags("Rol")
 @Controller('rol')
 export class RolController {
   constructor(

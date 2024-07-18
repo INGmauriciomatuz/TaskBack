@@ -28,7 +28,9 @@ import { FileInterceptor } from '@nestjs/platform-express';
 import { v4 as uuidv4 } from 'uuid';
 import { join } from 'path';
 import * as fs from 'fs';
+import { ApiTags } from '@nestjs/swagger';
 
+@ApiTags("Items")
 @Controller('items')
 export class ItemsController {
   constructor(
